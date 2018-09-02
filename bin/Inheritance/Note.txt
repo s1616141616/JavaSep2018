@@ -1,0 +1,61 @@
+INHERITANCE:
+		Multiple inheritance is not supported through class in java but it is possible by interface.
+		Only public methods support inheritance.
+		There are Single Inheritance, Multilevel Inheritance & HierarchialInheritance.
+
+CONSTRUCTOR:
+		Constructor has the same name as Class name and never return any value.
+
+POLYMORPHISM:
+		When an object a class can get form of different class is call POLYMORPHISM.
+		Syntax: Bank obj =new Bank_ABC;
+		
+		Method overloading happen in same class.
+		Method overriding can't change return type or number of argument.
+		
+FINAL keyword:
+	 	final Class can't be subClassed
+		final Method can't be overridden by subClass
+		final variable initialized once.
+
+ABSTRACT METHOD /CLASS:
+		Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+		Abstract class can't be instantiated.//Can't make an object of this class.
+		Can be extended.
+		Syntax: class a extends class b{}
+		
+		A class that is declared with abstract keyword, is known as abstract class in java.
+		An abstract class can have data member, abstract/non method, method body, constructor and even main() method.
+		To make a method an abstract class should be abstract.
+		It needs to be extended and its method implemented. It cannot be instantiated. 
+		Syntax: abstract class name{}
+		
+		A method that is declared as abstract and does not have implementation is known as abstract method. 
+		Syntax: abstract void methedName();
+		
+INTERFACE:
+		An interface in java is a blueprint of a class. It has static constants and abstract methods.
+		An interface can have another interface i.e. known as nested interface.
+		Interface can't be instantiated.
+		Interface can be implemented.
+		interfaces can have methods and variables
+		but the methods declared in interface contain only method signature, not body.
+		we can have method body in interface. But we need to make it default method. //Since java 8!!
+		Syntax: default void method_Name(){}
+		
+		we can have static method in interface. //Since java 8!!
+		Syntax: static int method_Name(){}
+		
+		Syntax: public interface name{}
+		Syntax : public class name implements interface_name {}
+		
+		It is used to achieve abstraction.
+		By interface, we can support the functionality of multiple inheritance.
+		Syntax: class A7 implements Printable, Showable {}
+		
+		It can be used to achieve loose coupling.
+		Interface fields are public, static and final by default, and methods are public and abstract.
+		a class extends another class, an interface extends another interface but a class implements an interface.
+
+RECURSION:
+		Calling method itself from inside the method is call Recursion.

@@ -7,11 +7,8 @@ public class ArrayListExample {
 	public static void main(String[] args) {
 
 		ArrayList<Integer> myList = new ArrayList<Integer>();
-		
-		/*ArryList can contain duplicate elements.
-		But HashSet doesn't.
-		*/		
-		
+
+		// ArryList can contain duplicate elements. But HashSet doesn't.
 		myList.add(56);
 		myList.add(56);
 		myList.add(56);
@@ -27,7 +24,7 @@ public class ArrayListExample {
 		System.out.println("My List Size is " + myList.size());
 
 		myList.remove(4);
-		
+
 		myList.set(1, 100);
 		myList.set(2, 200);
 		myList.set(3, 300);
